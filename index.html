@@ -1,179 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Envoie – Livraison rapide et sécurisée</title>
+
+  <!-- 🔗 Lien vers ton fichier CSS -->
+  <link rel="stylesheet" href="https://chelfouh.github.io/super-envoie/style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icônes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
 <body>
   <!-- Header -->
   <header class="header">
-    <div class="container">
-      <div class="nav" role="navigation" aria-label="Navigation principale">
-        <a class="logo" href="#top">
-          <i class="fas fa-cube" aria-hidden="true"></i>
-          <span>Super Envoie</span>
-        </a>
-
-        <nav class="nav-menu" aria-label="Liens du site">
-          <a href="#fonctionnalites">Fonctionnalités</a>
-          <a href="#comment-ca-marche">Comment ça marche</a>
-          <a href="#temoignages">Témoignages</a>
-          <a href="https://app.superenvoie.fr" class="btn-download">Télécharger</a>
-        </nav>
-
-        <button class="mobile-menu-toggle" type="button" aria-label="Menu">
-          <i class="fas fa-bars" aria-hidden="true"></i>
-        </button>
+    <div class="container nav">
+      <div class="logo">
+        <i class="fa-solid fa-cube"></i>
+        <span>Super Envoie</span>
       </div>
+      <nav class="nav-menu">
+        <a href="#fonctionnalites">Fonctionnalités</a>
+        <a href="#comment-ca-marche">Comment ça marche</a>
+        <a href="#temoignages">Témoignages</a>
+        <a href="https://app.superenvoie.fr" class="btn-download">Télécharger</a>
+      </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="top">
-    <div class="container">
-      <div class="hero-content">
-        <h1>Livraison rapide, simple et sécurisée</h1>
-        <p>Envoyez vos colis en quelques clics avec Super Envoie</p>
-        <div class="hero-buttons">
-          <a href="https://app.superenvoie.fr" class="btn-primary">Ouvrir l'application</a>
-          <a href="#comment-ca-marche" class="btn-secondary">Voir comment ça marche</a>
+  <!-- Section principale -->
+  <main>
+    <section class="hero">
+      <h1>Livraison ultra-rapide pour tous vos besoins</h1>
+      <p>Une solution complète pour tous vos besoins de livraison</p>
+      <a href="https://app.superenvoie.fr" class="btn-primary">Télécharger l’app</a>
+    </section>
+
+    <!-- Étapes -->
+    <section id="comment-ca-marche" class="steps">
+      <div class="step">
+        <i class="fa-solid fa-box"></i>
+        <h3>1. Créez votre demande</h3>
+        <p>Indiquez les adresses, décrivez le colis et validez votre demande.</p>
+      </div>
+      <div class="step">
+        <i class="fa-solid fa-motorcycle"></i>
+        <h3>2. Un livreur accepte</h3>
+        <p>Les livreurs à proximité reçoivent une alerte et l’un d’eux accepte.</p>
+      </div>
+      <div class="step">
+        <i class="fa-solid fa-circle-check"></i>
+        <h3>3. Livraison confirmée</h3>
+        <p>Suivez en direct et confirmez la réception via un code sécurisé.</p>
+      </div>
+    </section>
+
+    <!-- Pourquoi Super Envoie -->
+    <section id="fonctionnalites" class="features">
+      <h2>Pourquoi choisir Super Envoie ?</h2>
+      <p>Une solution complète pour tous vos besoins de livraison</p>
+      <div class="feature-grid">
+        <div class="feature">
+          <i class="fa-solid fa-bolt"></i>
+          <h4>Livraison ultra-rapide</h4>
+          <p>Vos colis livrés en quelques heures grâce à notre réseau de livreurs disponibles 24h/24.</p>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h4>Paiement sécurisé</h4>
+          <p>Paiement via Stripe, argent débloqué uniquement à la validation de livraison.</p>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-location-dot"></i>
+          <h4>Suivi en temps réel</h4>
+          <p>Suivez votre colis en direct et communiquez avec votre livreur.</p>
+        </div>
+        <div class="feature">
+          <i class="fa-solid fa-users"></i>
+          <h4>Support réactif</h4>
+          <p>Une équipe disponible par email pour vous aider à tout moment.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Comment ça marche -->
-  <section id="comment-ca-marche" class="how-it-works" aria-labelledby="how-title">
-    <div class="container">
-      <h2 id="how-title">Comment ça marche ?</h2>
-      <div class="steps">
-        <article class="step">
-          <div class="step-icon" aria-hidden="true"><i class="fas fa-cube"></i></div>
-          <h3>1. Créez votre demande</h3>
-          <p>Indiquez les adresses, décrivez le colis et validez votre demande.</p>
-        </article>
-        <article class="step">
-          <div class="step-icon" aria-hidden="true"><i class="fas fa-truck"></i></div>
-          <h3>2. Un livreur accepte</h3>
-          <p>Les livreurs proches reçoivent une notification et l’un d’eux accepte votre mission.</p>
-        </article>
-        <article class="step">
-          <div class="step-icon" aria-hidden="true"><i class="fas fa-check-circle"></i></div>
-          <h3>3. Livraison confirmée</h3>
-          <p>Suivez le trajet en direct et confirmez la réception avec un code sécurisé.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pourquoi choisir -->
-  <section id="fonctionnalites" class="why-choose" aria-labelledby="why-title">
-    <div class="container">
-      <div class="why-choose-content">
-        <div class="why-choose-text">
-          <h2 id="why-title">Pourquoi choisir Super Envoie&nbsp;?</h2>
-          <p>Une solution complète pour tous vos besoins de livraison</p>
-
-          <div class="features-list">
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true">⚡</div>
-              <div class="feature-content">
-                <h4>Livraison ultra-rapide</h4>
-                <p>Vos colis livrés en quelques heures grâce à nos livreurs disponibles 7j/7.</p>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true">🔐</div>
-              <div class="feature-content">
-                <h4>Paiement sécurisé</h4>
-                <p>Fonds capturés uniquement après confirmation de la livraison.</p>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true">🗺️</div>
-              <div class="feature-content">
-                <h4>Suivi en temps réel</h4>
-                <p>Carte en direct et messagerie avec votre livreur.</p>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" aria-hidden="true">💶</div>
-              <div class="feature-content">
-                <h4>Tarifs transparents</h4>
-                <p>Prix clairs et sans frais cachés, dès la création de la demande.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <aside class="why-choose-image" aria-label="Aperçu de l’application">
-          <div class="phone-mockup">
-            <div class="phone-screen">
-              <div class="app-interface">
-                <div class="app-header"><span>Super Envoie</span></div>
-                <div class="app-content">
-                  <div class="delivery-card">
-                    <div class="delivery-status">En cours</div>
-                    <div class="delivery-price">25,75 €</div>
-                    <div class="delivery-time">Arrivée ~15 min</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <p class="muted" style="margin-top:10px">
-              Ouvrir : <a href="https://app.superenvoie.fr" class="download-link" style="padding:6px 10px;border-radius:10px;">app.superenvoie.fr</a>
-            </p>
-          </div>
-        </aside>
-      </div>
-    </div>
-  </section>
-
-  <!-- Témoignages -->
-  <section id="temoignages" class="testimonials" aria-labelledby="testi-title">
-    <div class="container">
-      <h2 id="testi-title">Ils nous font confiance</h2>
-      <div class="testimonials-grid">
-        <article class="testimonial-card">
-          <p>“Application fluide et fiable, j’ai reçu mon colis en moins d’une heure !”</p>
-          <h4>— Marie L.</h4>
-        </article>
-        <article class="testimonial-card">
-          <p>“J’adore la simplicité. En quelques clics, un livreur était déjà en route.”</p>
-          <h4>— Karim B.</h4>
-        </article>
-        <article class="testimonial-card">
-          <p>“Interface claire, suivi précis, paiement sécurisé : top expérience.”</p>
-          <h4>— Inès R.</h4>
-        </article>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <div class="logo">
-            <i class="fas fa-cube" aria-hidden="true"></i>
-            <span>Super Envoie</span>
-          </div>
-          <p>La solution de livraison ultra-rapide et sécurisée.</p>
-        </div>
-        <div class="footer-section">
-          <h4>Contact</h4>
-          <p><i class="fas fa-envelope" aria-hidden="true"></i> support@superenvoie.fr</p>
-          <p><i class="fas fa-phone" aria-hidden="true"></i> +33 1 23 45 67 89</p>
-        </div>
-        <div class="footer-section">
-          <h4>Télécharger</h4>
-          <a href="https://app.superenvoie.fr" class="download-link">
-            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
-            Télécharger l'application
-          </a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 Super Envoie. Tous droits réservés.</p>
-      </div>
-    </div>
+  <footer class="footer">
+    <p>© 2025 Super Envoie — Tous droits réservés</p>
+    <p>Support : <a href="mailto:support@superenvoie.fr">support@superenvoie.fr</a></p>
   </footer>
-
-  <!-- JS -->
-  <script src="script.js"></script>
 </body>
+</html>
