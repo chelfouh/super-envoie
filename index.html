@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Super Envoie</title>
+  <style>
+    :root{
+      --green: #94bbb1; /* couleur principale Super Envoie */
+      --ink: #0b1d0b;   /* texte foncé */
+      --bg: #f8fbfa;    /* fond clair légèrement vert d’eau */
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    /* 🧭 NAVIGATION */
+    .nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      padding:14px 18px;
+      background:#fff;
+      border-bottom:1px solid #eaeaea;
+      position:sticky;
+      top:0;
+    }
+    .brand{
+      text-decoration:none;
+      color:var(--ink);
+      font-weight:800;
+      font-size:1.3rem;
+    }
+    .links a{
+      margin-left:12px;
+      text-decoration:none;
+      color:#333;
+    }
+    .links a:hover{opacity:0.7;}
+
+    /* 🏠 HERO */
+    .hero{
+      padding:80px 16px 60px;
+      text-align:center;
+      background:linear-gradient(180deg, rgba(148,187,177,0.2), transparent);
+    }
+    .hero h1{
+      font-size: clamp(38px, 6vw, 64px);
+      color: var(--ink);
+      margin-bottom:10px;
+      letter-spacing:1px;
+    }
+    .lead{
+      color:#333;
+      max-width:700px;
+      margin:0 auto 20px;
+      font-size:1.1rem;
+    }
+    .cta{
+      display:flex;
+      justify-content:center;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:20px;
+    }
+
+    /* 🔘 BOUTONS */
+    .btn, .btn-outline, .btn.ghost{
+      display:inline-block;
+      padding:14px 22px;
+      border-radius:12px;
+      font-weight:700;
+      text-decoration:none;
+      transition:all .2s ease;
+    }
+    .btn{
+      background: var(--green);
+      color: var(--ink);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+    .btn:hover{transform:translateY(-1px);}
+    .btn-outline{
+      border:2px solid var(--green);
+      color: var(--ink);
+      background:transparent;
+    }
+    .btn.ghost{
+      background:#fff;
+      border:1px solid #e1e1e1;
+      color:#333;
+    }
+
+    /* 🌟 SECTIONS */
+    .section{
+      max-width:1000px;
+      margin:0 auto;
+      padding:32px 16px;
+    }
+    .section h2{text-align:center;margin-bottom:12px;}
+    .grid{
+      list-style:none;
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+      gap:12px;
+      padding:0;
+    }
+    .grid li{
+      background:#fff;
+      border:1px solid #eaeaea;
+      border-radius:12px;
+      padding:14px;
+      text-align:center;
+      font-weight:500;
+    }
+
+    /* ⚙️ PIED DE PAGE */
+    .footer{
+      margin-top:50px;
+      padding:22px 16px;
+      text-align:center;
+      background:#fff;
+      border-top:1px solid #eaeaea;
+    }
+    .footer a{
+      color: var(--ink);
+      text-decoration:none;
+    }
+    .footer .small{
+      color:#666;
+      font-size:0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🧭 Barre de navigation -->
+  <header class="nav">
+    <a class="brand" href="#">Super Envoie</a>
+    <nav class="links">
+      <a href="#fonctionnalites">Fonctionnalités</a>
+      <a href="cgu.html">CGU</a>
+      <a class="btn-outline" href="mailto:contact@superenvoie.fr">Contact</a>
+    </nav>
+  </header>
+
+  <!-- 🏠 Section principale -->
+  <main>
+    <section class="hero">
+      <h1>Super Envoie</h1>
+      <p class="lead">Envoyez, recevez, suivez — tout simplement.</p>
+      <div class="cta">
+        <!-- 🔗 Bouton avec Deep Link -->
+        <a class="btn" href="superenvoie://accueil">Ouvrir l’application</a>
+        <a class="btn ghost" href="#fonctionnalites">Voir les fonctionnalités</a>
+      </div>
+    </section>
+
+    <!-- 🌟 Section Fonctionnalités -->
+    <section id="fonctionnalites" class="section">
+      <h2>Fonctionnalités principales</h2>
+      <ul class="grid">
+        <li>🔐 Paiement sécurisé</li>
+        <li>🗺️ Suivi en temps réel</li>
+        <li>📣 Notifications à proximité</li>
+        <li>🧾 Historique des livraisons</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- ⚙️ Pied de page -->
+  <footer class="footer">
+    <a href="cgu.html">Conditions Générales d’Utilisation</a> ·
+    <a href="mailto:contact@superenvoie.fr">contact@superenvoie.fr</a>
+    <p class="small">© 2025 Super Envoie</p>
+  </footer>
+
+</body>
+</html>
+
