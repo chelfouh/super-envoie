@@ -2,106 +2,199 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Conditions générales d’utilisation — Super Envoie</title>
-<link rel="canonical" href="https://superenvoie.fr/cgu.html">
+  <title>Conditions Générales d’Utilisation — Super Envoie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CGU Super Envoie — Conditions Générales d’Utilisation de la plateforme de mise en relation expéditeurs / livreurs.">
   <style>
-    html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;line-height:1.6;color:#111;background:#fff}
-    header,footer{border-bottom:1px solid #eee}
-    .wrap{max-width:900px;margin:0 auto;padding:24px}
-    h1{font-size:2rem;margin:0 0 8px}
-    h2{margin-top:28px}
-    nav a{margin-right:16px;color:#0a7;text-decoration:none}
-    nav a:hover{text-decoration:underline}
-    .muted{color:#666;font-size:.9rem}
-    .note{background:#f8f8f8;border:1px solid #eee;padding:12px;border-radius:8px}
-    a.btn{display:inline-block;margin:8px 0;border:1px solid #0a7;padding:8px 12px;border-radius:6px;text-decoration:none}
-    a.btn:hover{background:#0a7;color:#fff}
-    ul{padding-left:20px}
-    code{background:#f5f5f5;padding:2px 6px;border-radius:4px}
+    /* Reset & base */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      line-height: 1.6; color: #0f172a; background: #ffffff;
+    }
+    /* Layout */
+    .wrap { max-width: 920px; margin: 0 auto; padding: 24px; }
+    header {
+      padding: 24px 0 8px; border-bottom: 1px solid #e2e8f0; margin-bottom: 24px;
+    }
+    h1 { font-size: clamp(1.6rem, 2.4vw + 1rem, 2.4rem); margin: 0 0 4px; line-height: 1.2; }
+    .meta { color: #475569; font-size: 0.95rem; }
+    /* TOC */
+    .toc {
+      background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px 18px; margin: 16px 0 28px;
+    }
+    .toc h2 { font-size: 1.05rem; margin: 0 0 8px; }
+    .toc ol { margin: 0; padding-left: 18px; }
+    .toc a { color: #0ea5e9; text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    /* Content */
+    h2 { font-size: 1.25rem; margin: 28px 0 8px; line-height: 1.3; }
+    h3 { font-size: 1.05rem; margin: 18px 0 6px; }
+    p { margin: 10px 0; }
+    ul, ol { margin: 10px 0 10px 22px; }
+    code, .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; background: #f1f5f9; padding: 0 6px; border-radius: 6px; }
+    /* Callouts */
+    .callout {
+      border-left: 4px solid #0ea5e9; background: #f0f9ff; padding: 12px 14px; border-radius: 8px; margin: 14px 0;
+    }
+    /* Footer */
+    footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e2e8f0; color: #475569; font-size: 0.95rem; }
+    /* Links */
+    a { color: #0f766e; }
+    a:hover { text-decoration: underline; }
+    /* Small screens tweaks */
+    @media (max-width: 480px) {
+      .wrap { padding: 18px; }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <nav>
-        <a href="/index.html">Accueil</a>
-        <a href="/cgu.html">CGU</a>
-        <a href="/confidentialite.html">Confidentialité</a>
-      </nav>
-      <h1>Politique de Confidentialité</h1>
-      <p class="muted">Dernière mise à jour : 15/10/2025</p>
-    </div>
-  </header>
+  <div class="wrap">
+    <header>
+      <h1>Conditions Générales d’Utilisation — Super Envoie</h1>
+      <div class="meta">Date d’entrée en vigueur&nbsp;: <strong>15/10/2025</strong> • Dernière mise à jour&nbsp;: <strong>15 octobre 2025</strong></div>
+    </header>
 
-  <main class="wrap">
-    <p>La présente politique explique comment Super Envoie (« nous ») traite vos données personnelles conformément au RGPD et à la loi Informatique et Libertés.</p>
+    <nav class="toc" aria-label="Sommaire">
+      <h2>Sommaire</h2>
+      <ol>
+        <li><a href="#article-1">Article 1 — Objet et champ d’application</a></li>
+        <li><a href="#article-2">Article 2 — Définitions</a></li>
+        <li><a href="#article-3">Article 3 — Accès à la Plateforme et Inscription</a></li>
+        <li><a href="#article-4">Article 4 — Tarification, Paiement et Commissions</a></li>
+        <li><a href="#article-5">Article 5 — Responsabilité et Garanties</a></li>
+        <li><a href="#article-6">Article 6 — Données personnelles et confidentialité</a></li>
+        <li><a href="#article-7">Article 7 — Propriété intellectuelle</a></li>
+        <li><a href="#article-8">Article 8 — Droit applicable et règlement des litiges</a></li>
+        <li><a href="#article-9">Article 9 — Modification des CGU</a></li>
+      </ol>
+    </nav>
 
-    <h2>1. Responsable de traitement</h2>
-    <p>Super Envoie — Contact : <a href="mailto:support@superenvoie.fr">support@superenvoie.fr</a></p>
+    <section id="intro" class="callout" role="note">
+      <p>
+        Les présentes Conditions Générales d’Utilisation (les «&nbsp;CGU&nbsp;») régissent l’utilisation de la plateforme
+        <strong>Super Envoie</strong> (site web et application mobile) de mise en relation entre Expéditeurs et Livreurs.
+        L’accès et l’utilisation du service valent acceptation pleine et entière des présentes CGU.
+      </p>
+    </section>
 
-    <h2>2. Données collectées</h2>
-    <ul>
-      <li><strong>Identité</strong> : nom, prénom, e-mail, téléphone.</li>
-      <li><strong>Compte</strong> : identifiants, logs de connexion sécurisés.</li>
-      <li><strong>Livraison</strong> : adresses de retrait/livraison, contenu déclaré, photos de preuve.</li>
-      <li><strong>Paiement</strong> : géré par notre prestataire (ex. Stripe). Nous ne stockons pas vos numéros de carte.</li>
-      <li><strong>Géolocalisation</strong> : uniquement avec votre consentement, pendant la mission.</li>
-      <li><strong>Support</strong> : échanges avec l’assistance, preuves en cas de litige.</li>
-    </ul>
+    <section id="article-1">
+      <h2>Article 1 — Objet et champ d’application</h2>
+      <p>Les CGU définissent les modalités d’utilisation de la Plateforme Super Envoie par toute personne accédant au service. Super Envoie agit exclusivement en qualité d’intermédiaire technique et ne fournit ni service de transport, ni de livraison, ni d’entreposage. La responsabilité liée à la livraison incombe exclusivement au Livreur.</p>
+    </section>
 
-    <h2>3. Finalités et bases légales</h2>
-    <ul>
-      <li><strong>Fournir le service</strong> (exécution du contrat) : création de compte, mise en relation, suivi de mission.</li>
-      <li><strong>Paiements sécurisés</strong> (exécution du contrat/intérêt légitime) : blocage/libération des fonds.</li>
-      <li><strong>Prévention de la fraude et sécurité</strong> (intérêt légitime/obligation légale).</li>
-      <li><strong>Assistance et litiges</strong> (intérêt légitime/exécution du contrat).</li>
-      <li><strong>Amélioration du service</strong> (intérêt légitime).</li>
-    </ul>
+    <section id="article-2">
+      <h2>Article 2 — Définitions</h2>
+      <p><strong>Plateforme</strong> : service numérique (site web et application mobile) édité et exploité par Super Envoie, permettant la mise en relation d’Expéditeurs et de Livreurs.</p>
+      <p><strong>Expéditeur</strong> : utilisateur (particulier ou professionnel) confiant un colis à livrer via la Plateforme.</p>
+      <p><strong>Livreur</strong> : utilisateur (particulier ou professionnel) effectuant une livraison pour le compte d’un Expéditeur.</p>
+      <p><strong>Destinataire</strong> : personne physique ou morale désignée pour recevoir le colis.</p>
+      <p><strong>Colis</strong> : tout objet licite ≤ 3&nbsp;kg et ≤ 40&nbsp;×&nbsp;30&nbsp;×&nbsp;20&nbsp;cm, dûment emballé, à l’exclusion notamment des substances dangereuses, produits périssables sans emballage approprié, objets de valeur &gt; 150&nbsp;€, armes, drogues, médicaments, animaux vivants et tout article prohibé par la loi.</p>
+      <p><strong>Utilisateur</strong> : toute personne physique majeure ou personne morale utilisant la Plateforme.</p>
+      <p><strong>Compte</strong> : espace personnel de l’Utilisateur, accessible après inscription.</p>
+      <p><strong>Mission</strong> : prestation de livraison acceptée par un Livreur via la Plateforme et validée par un code de confirmation ou tout autre moyen prévu.</p>
+      <p><strong>Prestataire de paiement</strong> : prestataire tiers agréé (notamment Stripe Payments Europe Ltd. ou équivalent) assurant la gestion sécurisée des transactions.</p>
+    </section>
 
-    <h2>4. Communication entre utilisateurs</h2>
-    <div class="note">
-      Pour le bon déroulement des livraisons, nous autorisons le <strong>partage temporaire</strong> des numéros de téléphone et/ou e-mails entre Expéditeur, Livreur et, le cas échéant, Destinataire, <strong>exclusivement</strong> pour la mission en cours. Tout usage en dehors de ce cadre est interdit.
-    </div>
+    <section id="article-3">
+      <h2>Article 3 — Accès à la Plateforme et Inscription</h2>
+      <h3>1. Accès au service</h3>
+      <p>L’accès à la Plateforme est gratuit pour tout Utilisateur disposant d’un accès Internet. Super Envoie s’efforce d’assurer une disponibilité optimale sans garantir un accès ininterrompu (maintenance, raisons techniques, force majeure).</p>
 
-    <h2>5. Destinataires</h2>
-    <p>Prestataires techniques indispensables (hébergeur, prestataire de paiement, outils anti-fraude). Aucune vente ni location de données.</p>
+      <h3>2. Inscription des Utilisateurs</h3>
+      <p>L’inscription requiert la création d’un compte avec des informations exactes et à jour. Toute fausse déclaration, fraude ou utilisation abusive peut entraîner suspension ou résiliation immédiate du compte, sans préavis ni indemnité.</p>
 
-    <h2>6. Transferts hors UE</h2>
-    <p>Le cas échéant, nous encadrons ces transferts par des garanties appropriées (Clauses Contractuelles Types de la Commission européenne).</p>
+      <h3>3. Conditions applicables aux Livreurs</h3>
+      <p>L’Utilisateur doit être majeur (18 ans révolus), disposer des moyens nécessaires (à pied, vélo, trottinette, moto, voiture, etc.), respecter les règles de sécurité et de circulation et, le cas échéant, utiliser un véhicule en règle (immatriculation, assurance, contrôle technique).</p>
+      <p><em>Livreurs professionnels</em> : inscription auprès d’un registre légal (URSSAF, INSEE, RCS ou RM) et respect des obligations sociales et fiscales.</p>
+      <p><em>Livreurs particuliers (occasionnels)</em> : agissent dans le cadre du cotransportage sur un trajet effectué pour leur propre compte. La participation financière sert au <em>partage des frais</em> (carburant, péage, usure) et ne peut générer de bénéfice. Super Envoie peut limiter le nombre de livraisons et contrôler les montants demandés pour garantir ce cadre non professionnel.</p>
 
-    <h2>7. Durées de conservation</h2>
-    <ul>
-      <li>Compte : durée d’activité, puis archivage jusqu’à 5 ans si obligations légales.</li>
-      <li>Géolocalisation : uniquement pendant la mission (pas de conservation au-delà).</li>
-      <li>Logs de sécurité : 12 mois maximum.</li>
-      <li>Documents de facturation : durées légales applicables (ex. 10 ans comptabilité).</li>
-    </ul>
+      <h3>4. Vérification et sécurité</h3>
+      <p>Super Envoie peut vérifier documents d’identité et statuts professionnels.</p>
 
-    <h2>8. Vos droits</h2>
-    <p>Accès, rectification, effacement, limitation, portabilité, opposition. Exercez-les à <a href="mailto:support@superenvoie.fr">support@superenvoie.fr</a>. Vous pouvez déposer une réclamation auprès de la CNIL.</p>
+      <h3>5. Indépendance des Livreurs</h3>
+      <p>Les Livreurs agissent de manière indépendante (sans lien de subordination) ou comme particuliers occasionnels.</p>
 
-    <h2>9. Sécurité</h2>
-    <p>Mesures techniques et organisationnelles raisonnables (chiffrement en transit, contrôle d’accès, journalisation). Vous êtes responsable de la confidentialité de vos identifiants.</p>
+      <h3>6. Refus/Suppression de compte</h3>
+      <p>Super Envoie peut refuser ou supprimer tout compte ne respectant pas les CGU.</p>
+    </section>
 
-    <h2>10. Cookies</h2>
-    <p>Par défaut, nous n’utilisons que des cookies strictement nécessaires au fonctionnement du site. Tout cookie de mesure d’audience ou publicitaire ne sera déposé qu’avec votre consentement via le bandeau cookies.</p>
+    <section id="article-4">
+      <h2>Article 4 — Tarification, Paiement et Commissions</h2>
+      <h3>1. Détermination du prix</h3>
+      <p>Le prix est proposé par l’Expéditeur. Un <strong>montant minimum</strong> est appliqué pour couvrir les frais de service. Il peut être ajusté par Super Envoie avec un préavis de 15 jours.</p>
+      <h3>2. Paiement sécurisé</h3>
+      <p>Tous les paiements transitent via le prestataire agréé. Les fonds sont bloqués au profit du Livreur et libérés uniquement après confirmation de livraison.</p>
+      <h3>3. Annulation et remboursement</h3>
+      <p>Le Client peut annuler avant acceptation par un Livreur. Après acceptation, le montant reste bloqué. En cas de litige, un remboursement peut être opéré après analyse des preuves (photos, code de validation, etc.) sous 14 jours ouvrés.</p>
+      <h3>4. Frais de service</h3>
+      <p>Les frais de service perçus par Super Envoie ne sont pas remboursables, sauf décision exceptionnelle.</p>
+    </section>
 
-    <h2>11. Délégué à la protection des données (DPO)</h2>
-    <p>Contact DPO : <a href="mailto:support@superenvoie.fr">support@superenvoie.fr</a></p>
+    <section id="article-5">
+      <h2>Article 5 — Responsabilité et Garanties</h2>
+      <h3>1. Rôle de Super Envoie</h3>
+      <p>Super Envoie agit comme <em>intermédiaire technique</em> et tiers de confiance, avec obligation de moyens limitée à la mise en relation et au paiement sécurisé.</p>
+      <h3>2. Responsabilité / Assurance des Livreurs</h3>
+      <p><em>Particuliers</em> : assurance responsabilité civile personnelle, et assurance du véhicule si utilisé.</p>
+      <p><em>Professionnels</em> : RC Pro et, si nécessaire, assurance transport de marchandises.</p>
+      <h3>3. Assurance des marchandises</h3>
+      <p>Super Envoie ne fournit aucune assurance pour les colis. L’Expéditeur doit emballer correctement et, si besoin, assurer la valeur du bien.</p>
+      <h3>4. Responsabilité des Expéditeurs</h3>
+      <p>Respect du contenu licite, informations exactes (adresses, etc.).</p>
+      <h3>5. Exclusions / Limitation</h3>
+      <p>Aucune responsabilité en cas de dysfonctionnement, retard, dommage ou manquement imputable à un Utilisateur ou à la force majeure. À titre subsidiaire, la responsabilité serait limitée au montant de la commission perçue sur la mission.</p>
+      <h3>6. Litiges entre Utilisateurs</h3>
+      <p>Super Envoie n’est pas responsable des litiges (retard, perte, vol, dégradation). Ceux-ci doivent être réglés directement entre Expéditeurs et Livreurs.</p>
+    </section>
 
-    <h2>12. Modifications</h2>
-    <p>La présente politique peut évoluer. La dernière version prévaut.</p>
+    <section id="article-6">
+      <h2>Article 6 — Données personnelles et confidentialité</h2>
+      <h3>1. Principes généraux</h3>
+      <p>Protection conforme au RGPD (UE&nbsp;2016/679) et à la loi Informatique et Libertés.</p>
+      <h3>2. Données collectées</h3>
+      <p>Données strictement nécessaires : identité, données de livraison, paiement, géolocalisation (avec consentement).</p>
+      <h3>3. Finalités</h3>
+      <p>Gestion des comptes, mise en relation, suivi des livraisons, paiements, lutte contre la fraude, amélioration du service.</p>
+      <h3>3 bis. Communication entre Utilisateurs</h3>
+      <p>Pour la bonne exécution des livraisons, communication directe possible entre Expéditeur, Livreur et, le cas échéant, Destinataire (partage temporaire et sécurisé des numéros de téléphone/adresses e-mail), strictement limitée à la mission en cours. Interdiction d’usage hors cadre de la mission.</p>
+      <h3>4. Partage des données</h3>
+      <p>Transmission uniquement aux prestataires techniques indispensables (ex.&nbsp;Stripe, hébergeur). Aucune vente ou location de données.</p>
+      <h3>5. Durée de conservation</h3>
+      <p>Conservation pendant la durée d’activité du compte puis archivage jusqu’à 5 ans (obligations légales).</p>
+      <h3>6. Droits des Utilisateurs</h3>
+      <p>Droit d’accès, rectification, effacement, opposition, portabilité. Contact&nbsp;: <a href="mailto:support@superenvoie.fr">support@superenvoie.fr</a>.</p>
+      <h3>7. DPO</h3>
+      <p>Un délégué à la protection des données (DPO) est joignable à <a href="mailto:support@superenvoie.fr">support@superenvoie.fr</a>.</p>
+      <h3>8. Géolocalisation</h3>
+      <p>Utilisée uniquement pendant la durée de la mission, non conservée au-delà.</p>
+    </section>
 
-    <p><a class="btn" href="/docs/CGU_Super_Envoie_2025.pdf">Voir les CGU (PDF)</a></p>
-  </main>
+    <section id="article-7">
+      <h2>Article 7 — Propriété intellectuelle</h2>
+      <p>Les éléments de la Plateforme (textes, logos, code, design) sont la propriété de Super Envoie et protégés par le droit de la propriété intellectuelle. Licence d’utilisation personnelle, non exclusive et révocable. Reproduction, copie ou extraction de données (scraping) interdite.</p>
+      <p>Le concept, le modèle économique et l’architecture fonctionnelle de Super Envoie sont protégés au titre du droit d’auteur et de la concurrence déloyale. Tout usage non autorisé du nom «&nbsp;Super Envoie&nbsp;», de son logo ou de sa charte graphique pourra faire l’objet de poursuites.</p>
+    </section>
 
-  <footer>
-    <div class="wrap muted">
-      © Super Envoie — <a href="/cgu.html">CGU</a> — <a href="/confidentialite.html">Confidentialité</a>
-    </div>
-  </footer>
+    <section id="article-8">
+      <h2>Article 8 — Droit applicable et règlement des litiges</h2>
+      <p>Les CGU sont régies par le droit français (version française faisant foi). En cas de difficulté avec Super Envoie, l’Utilisateur s’engage à rechercher une solution amiable en contactant <a href="mailto:support@superenvoie.fr">support@superenvoie.fr</a>. Le consommateur peut recourir gratuitement à un médiateur de la consommation (coordonnées fournies sur demande). À défaut, compétence exclusive des tribunaux de Marseille, sous réserve des dispositions légales impératives.</p>
+      <p>En cas de litige entre Utilisateurs, Super Envoie peut suspendre les comptes concernés à sa discrétion, dans l’attente d’une résolution.</p>
+    </section>
 
+    <section id="article-9">
+      <h2>Article 9 — Modification des CGU</h2>
+      <p>Super Envoie peut modifier les CGU. Toute modification substantielle sera notifiée. L’utilisation continue du service après notification vaut acceptation de la version en vigueur (accessible à tout moment sur le site et l’application).</p>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Super Envoie — Tous droits réservés.</p>
+      <p>Contact&nbsp;: <a href="mailto:support@superenvoie.fr">support@superenvoie.fr</a></p>
+      <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+      </script>
+    </footer>
+  </div>
 </body>
 </html>
-
