@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Politique de Confidentialité — Super Envoie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Politique de confidentialité (RGPD) de la plateforme Super Envoie.">
+  <link rel="canonical" href="https://superenvoie.fr/confidentialite.html">
+  <style>
+    html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;line-height:1.6;color:#111;background:#fff}
+    header,footer{border-bottom:1px solid #eee}
+    .wrap{max-width:900px;margin:0 auto;padding:24px}
+    h1{font-size:2rem;margin:0 0 8px}
+    h2{margin-top:28px}
+    nav a{margin-right:16px;color:#0a7;text-decoration:none}
+    nav a:hover{text-decoration:underline}
+    .muted{color:#666;font-size:.9rem}
+    .note{background:#f8f8f8;border:1px solid #eee;padding:12px;border-radius:8px}
+    a.btn{display:inline-block;margin:8px 0;border:1px solid #0a7;padding:8px 12px;border-radius:6px;text-decoration:none}
+    a.btn:hover{background:#0a7;color:#fff}
+    ul{padding-left:20px}
+    code{background:#f5f5f5;padding:2px 6px;border-radius:4px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a href="/index.html">Accueil</a>
+        <a href="/cgu.html">CGU</a>
+        <a href="/confidentialite.html">Confidentialité</a>
+      </nav>
+      <h1>Politique de Confidentialité</h1>
+      <p class="muted">Dernière mise à jour : 15/10/2025</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p>La présente politique explique comment Super Envoie (« nous ») traite vos données personnelles conformément au RGPD et à la loi Informatique et Libertés.</p>
+
+    <h2>1. Responsable de traitement</h2>
+    <p>Super Envoie — Contact : <a href="mailto:support@superenvoie.fr">support@superenvoie.fr</a></p>
+
+    <h2>2. Données collectées</h2>
+    <ul>
+      <li><strong>Identité</strong> : nom, prénom, e-mail, téléphone.</li>
+      <li><strong>Compte</strong> : identifiants, logs de connexion sécurisés.</li>
+      <li><strong>Livraison</strong> : adresses de retrait/livraison, contenu déclaré, photos de preuve.</li>
+      <li><strong>Paiement</strong> : géré par notre prestataire (ex. Stripe). Nous ne stockons pas vos numéros de carte.</li>
+      <li><strong>Géolocalisation</strong> : uniquement avec votre consentement, pendant la mission.</li>
+      <li><strong>Support</strong> : échanges avec l’assistance, preuves en cas de litige.</li>
+    </ul>
+
+    <h2>3. Finalités et bases légales</h2>
+    <ul>
+      <li><strong>Fournir le service</strong> (exécution du contrat) : création de compte, mise en relation, suivi de mission.</li>
+      <li><strong>Paiements sécurisés</strong> (exécution du contrat/intérêt légitime) : blocage/libération des fonds.</li>
+      <li><strong>Prévention de la fraude et sécurité</strong> (intérêt légitime/obligation légale).</li>
+      <li><strong>Assistance et litiges</strong> (intérêt légitime/exécution du contrat).</li>
+      <li><strong>Amélioration du service</strong> (intérêt légitime).</li>
+    </ul>
+
+    <h2>4. Communication entre utilisateurs</h2>
+    <div class="note">
+      Pour le bon déroulement des livraisons, nous autorisons le <strong>partage temporaire</strong> des numéros de téléphone et/ou e-mails entre Expéditeur, Livreur et, le cas échéant, Destinataire, <strong>exclusivement</strong> pour la mission en cours. Tout usage en dehors de ce cadre est interdit.
+    </div>
+
+    <h2>5. Destinataires</h2>
+    <p>Prestataires techniques indispensables (hébergeur, prestataire de paiement, outils anti-fraude). Aucune vente ni location de données.</p>
+
+    <h2>6. Transferts hors UE</h2>
+    <p>Le cas échéant, nous encadrons ces transferts par des garanties appropriées (Clauses Contractuelles Types de la Commission européenne).</p>
+
+    <h2>7. Durées de conservation</h2>
+    <ul>
+      <li>Compte : durée d’activité, puis archivage jusqu’à 5 ans si obligations légales.</li>
+      <li>Géolocalisation : uniquement pendant la mission (pas de conservation au-delà).</li>
+      <li>Logs de sécurité : 12 mois maximum.</li>
+      <li>Documents de facturation : durées légales applicables (ex. 10 ans comptabilité).</li>
+    </ul>
+
+    <h2>8. Vos droits</h2>
+    <p>Accès, rectification, effacement, limitation, portabilité, opposition. Exercez-les à <a href="mailto:support@superenvoie.fr">support@superenvoie.fr</a>. Vous pouvez déposer une réclamation auprès de la CNIL.</p>
+
+    <h2>9. Sécurité</h2>
+    <p>Mesures techniques et organisationnelles raisonnables (chiffrement en transit, contrôle d’accès, journalisation). Vous êtes responsable de la confidentialité de vos identifiants.</p>
+
+    <h2>10. Cookies</h2>
+    <p>Par défaut, nous n’utilisons que des cookies strictement nécessaires au fonctionnement du site. Tout cookie de mesure d’audience ou publicitaire ne sera déposé qu’avec votre consentement via le bandeau cookies.</p>
+
+    <h2>11. Délégué à la protection des données (DPO)</h2>
+    <p>Contact DPO : <a href="mailto:support@superenvoie.fr">support@superenvoie.fr</a></p>
+
+    <h2>12. Modifications</h2>
+    <p>La présente politique peut évoluer. La dernière version prévaut.</p>
+
+    <p><a class="btn" href="/docs/CGU_Super_Envoie_2025.pdf">Voir les CGU (PDF)</a></p>
+  </main>
+
+  <footer>
+    <div class="wrap muted">
+      © Super Envoie — <a href="/cgu.html">CGU</a> — <a href="/confidentialite.html">Confidentialité</a>
+    </div>
+  </footer>
+
+  <!-- Bandeau cookies (voir snippet ci-dessous) -->
+  <script src="/assets/cookies.js" defer></script>
+</body>
+</html>
+
