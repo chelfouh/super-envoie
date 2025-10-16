@@ -1,2 +1,2 @@
-/.well-known/*   /.well-known/:splat   200
-/*               https://superenvoie.adalo.com   302
+/.well-known/*    /.well-known/:splat    200
+/*                https://superenvoie.adalo.com/:splat    301
