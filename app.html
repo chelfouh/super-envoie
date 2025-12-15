@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Installer Super Envoie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var ua = navigator.userAgent || navigator.vendor || window.opera;
+
+      // iOS
+      if (/iPad|iPhone|iPod/.test(ua)) {
+        window.location.href = "https://apps.apple.com/fr/app/super-envoie/id6754334904";
+      }
+      // Android
+      else if (/android/i.test(ua)) {
+        window.location.href = "https://play.google.com/store/apps/details?id=com.superenvoie.app";
+      }
+    });
+  </script>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    a {
+      display: block;
+      margin: 20px;
+      font-size: 18px;
+      color: #007aff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Installer Super Envoie</h1>
+  <p>Choisissez votre plateforme :</p>
+
+  <a href="https://apps.apple.com/fr/app/super-envoie/id6754334904">
+    📱 Télécharger sur l’App Store
+  </a>
+
+  <a href="https://play.google.com/store/apps/details?id=com.superenvoie.app">
+    🤖 Télécharger sur Google Play
+  </a>
+</body>
+</html>
