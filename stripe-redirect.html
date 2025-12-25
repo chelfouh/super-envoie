@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Retour Stripe — Super Envoie</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:0;padding:24px;line-height:1.4}
+    .card{max-width:520px;margin:0 auto;border:1px solid #eee;border-radius:14px;padding:18px}
+    button{width:100%;height:44px;border-radius:10px;border:0;cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Retour Stripe</h2>
+    <p>On te renvoie vers l’application…</p>
+    <button id="openBtn">Ouvrir l’app</button>
+    <p style="margin-top:12px;color:#666;font-size:14px">
+      Si rien ne se passe, appuie sur “Ouvrir l’app”.
+    </p>
+  </div>
+
+<script>
+  const params = new URLSearchParams(location.search);
+  const type = params.get("type") || "return";
+  const uid = params.get("uid") || "";
+  const accountId = params.get("accountId") || "";
+
+  const deepLink = `superenvoie://stripe/${encodeURIComponent(type)}?uid=${encodeURIComponent(uid)}&accountId=${encodeURIComponent(accountId)}`;
+
+  function go() {
+    window.location.href = deepLink;
+  }
+
+  document.getElementById("openBtn").addEventListener("click", go);
+  setTimeout(go, 150);
+</script>
+</body>
+</html>
