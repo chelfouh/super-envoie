@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Retour — Super Envoie</title>
+  <style>
+    :root{
+      --primary:#94BBB1;
+      --bg:#F6FAF9;
+      --text:#1F2937;
+      --muted:#6B7280;
+      --card:#ffffff;
+      --border:#E5E7EB;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:var(--bg);
+      color:var(--text);
+      padding:24px;
+    }
+    .wrap{max-width:520px;margin:0 auto;min-height:70vh;display:flex;align-items:center}
+    .card{
+      width:100%;
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:18px;
+      box-shadow:0 10px 25px rgba(0,0,0,.04);
+    }
+    .brand{
+      display:flex;align-items:center;gap:10px;margin-bottom:10px
+    }
+    .dot{
+      width:12px;height:12px;border-radius:999px;background:var(--primary);
+      box-shadow:0 0 0 6px rgba(148,187,177,.18);
+    }
+    h1{font-size:18px;margin:0}
+    p{margin:10px 0;color:var(--muted);line-height:1.45}
+    .status{
+      margin-top:12px;
+      padding:10px 12px;
+      border-radius:12px;
+      background:#fff;
+      border:1px dashed var(--border);
+      color:var(--text);
+      font-size:14px;
+    }
+    .btn{
+      margin-top:14px;
+      width:100%;
+      height:48px;
+      border-radius:14px;
+      border:0;
+      cursor:pointer;
+      background:var(--primary);
+      color:#fff;
+      font-weight:800;
+      font-size:15px;
+    }
+    .small{font-size:13px;color:var(--muted)}
+    code{
+      display:block;
+      word-break:break-all;
+      background:#F9FAFB;
+      border:1px solid var(--border);
+      padding:10px;
+      border-radius:12px;
+      font-size:12px;
+      margin-top:10px;
+      color:#111827;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="brand">
+        <div class="dot"></div>
+        <h1>Super Envoie</h1>
+      </div>
+
+      <p id="title">Patiente un instant…</p>
+      <p id="subtitle">On te redirige automatiquement vers l’application.</p>
+
+      <div class="status" id="statusBox">Préparation de la redirection…</div>
+
+      <button class="btn" id="openBtn">Ouvrir l’app</button>
+
+      <p class="small" style="margin-top:12px">
+        Si rien ne se passe, appuie sur “Ouvrir l’app”.
+      </p>
+
+      <code id="debug" style="display:none"></code>
+    </div>
+  </div>
+
+<script>
+  // --- Helpers
+  const qs = new URLSearchParams(location.search);
+  const flow = (qs.get("flow") || "").trim(); // client_payment | driver_onboarding
+  const type = (qs.get("type") || "return").trim(); // success | cancel | return | refresh
+
+  // Client payment params
+  const requestId = (qs.get("requestId") || "").trim();
+  const sessionId = (qs.get("session_id") || "").trim();
+
+  // Driver onboarding params
+  const uid = (qs.get("uid") || "").trim();
+  const accountId = (qs.get("accountId") || "").trim();
+
+  // App scheme
+  const APP_SCHEME = "superenvoie://";
+
+  function setText(el, txt){ document.getElementById(el).textContent = txt; }
+
+  function buildDeepLink(){
+    // ✅ FLOW 1: Paiement client
+    if (flow === "client_payment") {
+      // superenvoie://pay/success?requestId=...&session_id=...
+      // superenvoie://pay/cancel?requestId=...
+      const action = (type === "success" || type === "cancel") ? type : "return";
+      let url = `${APP_SCHEME}pay/${encodeURIComponent(action)}?requestId=${encodeURIComponent(requestId)}`;
+      if (action === "success" && sessionId) {
+        url += `&session_id=${encodeURIComponent(sessionId)}`;
+      }
+      return url;
+    }
+
+    // ✅ FLOW 2: Onboarding driver
+    if (flow === "driver_onboarding") {
+      // superenvoie://stripe/return?uid=...&accountId=...
+      const action = (type === "return" || type === "refresh") ? type : "return";
+      let url = `${APP_SCHEME}stripe/${encodeURIComponent(action)}?`;
+      if (uid) url += `uid=${encodeURIComponent(uid)}&`;
+      if (accountId) url += `accountId=${encodeURIComponent(accountId)}&`;
+      return url.replace(/&$/, "");
+    }
+
+    // Fallback (au cas où)
+    return `${APP_SCHEME}home`;
+  }
+
+  function describe(){
+    if (flow === "client_payment") {
+      if (type === "success") {
+        setText("title", "Paiement validé ✅");
+        setText("subtitle", "On vérifie ton paiement et on te renvoie vers l’application…");
+      } else if (type === "cancel") {
+        setText("title", "Paiement annulé");
+        setText("subtitle", "Retour vers l’application…");
+      } else {
+        setText("title", "Retour paiement");
+        setText("subtitle", "Retour vers l’application…");
+      }
+      return;
+    }
+
+    if (flow === "driver_onboarding") {
+      setText("title", "Retour Stripe Express");
+      setText("subtitle", "On te renvoie vers l’application pour finaliser…");
+      return;
+    }
+
+    setText("title", "Patiente un instant…");
+    setText("subtitle", "On te redirige vers l’application.");
+  }
+
+  const deepLink = buildDeepLink();
+  describe();
+
+  setText("statusBox", "Redirection en cours…");
+
+  function go(){
+    window.location.href = deepLink;
+  }
+
+  document.getElementById("openBtn").addEventListener("click", go);
+
+  // Auto-redirect (rapide + une 2e tentative)
+  setTimeout(go, 120);
+  setTimeout(go, 900);
+
+  // Debug optionnel: ajoute &debug=1 à l'url si besoin
+  if ((qs.get("debug") || "") === "1") {
+    const d = document.getElementById("debug");
+    d.style.display = "block";
+    d.textContent = `flow=${flow}\ntype=${type}\nrequestId=${requestId}\nsession_id=${sessionId}\nuid=${uid}\naccountId=${accountId}\n\ndeepLink=${deepLink}`;
+  }
+</script>
+</body>
+</html>
