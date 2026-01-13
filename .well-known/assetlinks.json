@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.siham.superenvoie",
+      "sha256_cert_fingerprints": [
+        "5F:22:64:B2:1F:E4:6A:FC:5D:E8:E1:94:E3:D3:9A:85:F4:6A:81:4A:6C:B9:01:E4:9E:77:1A:FB:17:0B:3B:4B"
+      ]
+    }
+  }
+]
