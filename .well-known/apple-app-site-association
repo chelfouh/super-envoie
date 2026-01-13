@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "C4575G5LC5.com.siham.superenvoie",
+        "paths": [
+          "/pay/*",
+          "/stripe-redirect.html*",
+          "/pay/stripe-return.html*"
+        ]
+      }
+    ]
+  }
+}
