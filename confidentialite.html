@@ -18,8 +18,6 @@
     nav a:hover{text-decoration:underline}
     .muted{color:#666;font-size:.9rem}
     .note{background:#f8f8f8;border:1px solid #eee;padding:12px;border-radius:8px}
-    a.btn{display:inline-block;margin:8px 0;border:1px solid #0a7;padding:8px 12px;border-radius:6px;text-decoration:none}
-    a.btn:hover{background:#0a7;color:#fff}
     ul{padding-left:20px}
     code{background:#f5f5f5;padding:2px 6px;border-radius:4px}
   </style>
@@ -100,27 +98,45 @@
       <li>afficher la position du livreur ;</li>
       <li>permettre le suivi en temps réel ;</li>
       <li>faciliter la mise en relation ;</li>
-      <li>améliorer la sécurité et la bonne exécution de la livraison.</li>
+      <li>améliorer la sécurité et la bonne exécution de la livraison ;</li>
+      <li>assurer la continuité du service pendant la mission.</li>
     </ul>
+    <p>
+      Les données de géolocalisation sont utilisées uniquement pour les besoins du service de
+      livraison et ne sont ni vendues, ni louées, ni utilisées à des fins publicitaires.
+    </p>
 
-    <h3>2.6 Données de reconnaissance d’activité / immobilité</h3>
+    <h3>2.6 Données d’activité physique et de reconnaissance d’activité</h3>
     <p>
       Avec le consentement de l’utilisateur concerné et lorsque cette fonctionnalité est activée
-      dans l’application, nous pouvons utiliser les données de
-      <strong>reconnaissance d’activité du téléphone</strong> afin de détecter si le livreur est
-      <strong>en mouvement ou immobile</strong> pendant une mission.
+      dans l’application, <strong>Super Envoie</strong> peut accéder aux données
+      d’<strong>activité physique</strong> et de <strong>reconnaissance d’activité</strong> du
+      téléphone, notamment via la permission Android
+      <code>ACTIVITY_RECOGNITION</code>, afin de détecter certains états de mouvement du livreur
+      pendant une mission, par exemple :
     </p>
-    <p>Ces données sont utilisées exclusivement pour :</p>
     <ul>
-      <li>adapter le suivi en temps réel ;</li>
-      <li>optimiser le fonctionnement du suivi de mission ;</li>
-      <li>limiter la consommation de batterie ;</li>
-      <li>améliorer la fiabilité technique du service.</li>
+      <li>immobile ;</li>
+      <li>en mouvement ;</li>
+      <li>à pied ;</li>
+      <li>en véhicule.</li>
+    </ul>
+    <p>Ces données sont utilisées uniquement pour :</p>
+    <ul>
+      <li>adapter le suivi en temps réel de la mission ;</li>
+      <li>suspendre, réduire ou ajuster certains traitements de suivi lorsque le livreur est immobile ;</li>
+      <li>optimiser la consommation de batterie ;</li>
+      <li>améliorer la fiabilité technique, la continuité et la sécurité du service ;</li>
+      <li>éviter un suivi inutile lorsque le mouvement du livreur ne justifie pas un traitement actif.</li>
     </ul>
     <div class="note">
-      Ces données ne sont pas utilisées à des fins de santé, de fitness, de bien-être,
-      d’évaluation médicale ou de profilage médical.
+      Ces données d’activité physique et de reconnaissance d’activité ne sont pas utilisées pour
+      fournir un service de santé, de fitness, de bien-être, d’activité sportive, d’évaluation
+      médicale, ni pour établir un profil médical de l’utilisateur.
     </div>
+    <p>
+      Elles ne sont ni vendues, ni louées, ni utilisées à des fins publicitaires.
+    </p>
 
     <h3>2.7 Données de support et de litige</h3>
     <ul>
@@ -142,7 +158,7 @@
     <ul>
       <li><strong>Fourniture du service</strong> : création de compte, gestion des profils, publication et attribution des demandes, exécution des livraisons, suivi des missions, communication liée au service. <strong>Base légale :</strong> exécution du contrat.</li>
       <li><strong>Suivi de mission et géolocalisation</strong> : affichage de la position, suivi en temps réel, optimisation du déroulement de la mission, sécurité de la livraison. <strong>Base légale :</strong> exécution du contrat et consentement lorsque requis.</li>
-      <li><strong>Détection de mouvement / immobilité du livreur</strong> : déterminer si le livreur est en déplacement ou immobile afin d’adapter le suivi de mission et d’optimiser le fonctionnement technique de l’application. <strong>Base légale :</strong> consentement et intérêt légitime.</li>
+      <li><strong>Détection de mouvement, d’immobilité et d’activité physique du livreur</strong> : déterminer si le livreur est en déplacement, immobile, à pied ou en véhicule afin d’adapter le suivi de mission et d’optimiser le fonctionnement technique de l’application. <strong>Base légale :</strong> consentement et intérêt légitime.</li>
       <li><strong>Gestion des paiements</strong> : traitement des paiements, blocage ou libération des fonds, prévention des impayés, gestion des remboursements, obligations comptables et fiscales. <strong>Base légale :</strong> exécution du contrat, obligation légale et intérêt légitime.</li>
       <li><strong>Prévention de la fraude et sécurité</strong> : détection des abus, prévention de la fraude, protection des comptes, sécurisation de la plateforme, conservation de preuves en cas d’incident. <strong>Base légale :</strong> intérêt légitime et obligation légale, selon les cas.</li>
       <li><strong>Assistance et gestion des litiges</strong> : réponse aux demandes d’assistance, traitement des réclamations, résolution des différends entre utilisateurs. <strong>Base légale :</strong> exécution du contrat et intérêt légitime.</li>
@@ -178,6 +194,12 @@
       <li>les autres utilisateurs concernés par une mission, dans la limite nécessaire à son exécution ;</li>
       <li>les autorités administratives, judiciaires ou organismes légalement habilités, lorsque la loi l’exige.</li>
     </ul>
+    <p>
+      Les données d’activité physique et de reconnaissance d’activité sont traitées uniquement
+      par Super Envoie et, si nécessaire, par ses prestataires techniques indispensables au
+      fonctionnement du service. Elles ne sont pas partagées avec d’autres utilisateurs à des
+      fins de santé, de publicité ou de profilage.
+    </p>
     <p><strong>Nous ne vendons et ne louons jamais vos données personnelles à des tiers.</strong></p>
 
     <h2>6. Transferts hors Union européenne</h2>
@@ -211,12 +233,16 @@
       service, à la preuve de bonne exécution ou aux obligations légales.
     </p>
 
-    <h3>7.4 Reconnaissance d’activité / immobilité</h3>
+    <h3>7.4 Données d’activité physique et de reconnaissance d’activité</h3>
     <p>
-      Les données de reconnaissance d’activité ou d’immobilité sont utilisées
-      <strong>uniquement pendant la mission en cours</strong> pour le suivi technique et
-      l’optimisation du service. Elles ne sont pas conservées au-delà de la durée strictement
-      nécessaire à cette finalité, sauf nécessité technique, sécuritaire ou légale dûment justifiée.
+      Les données d’activité physique et de reconnaissance d’activité sont utilisées uniquement
+      pendant la mission en cours pour le suivi technique, l’optimisation du service, la réduction
+      de la consommation de batterie et la continuité du suivi.
+    </p>
+    <p>
+      Elles sont conservées uniquement pendant la durée strictement nécessaire à cette finalité
+      et ne sont pas conservées au-delà de la mission, sauf nécessité technique, de sécurité,
+      de traitement d’un incident ou obligation légale.
     </p>
 
     <h3>7.5 Logs et données de sécurité</h3>
