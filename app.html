@@ -10,12 +10,13 @@
       var ua = navigator.userAgent || navigator.vendor || window.opera;
 
       // iOS
-      if (/iPad|iPhone|iPod/.test(ua)) {
-        window.location.href = "https://apps.apple.com/fr/app/super-envoie/id6754334904";
+      if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+        window.location.replace("https://apps.apple.com/fr/app/super-envoie/id6759556505");
       }
+
       // Android
       else if (/android/i.test(ua)) {
-        window.location.href = "https://play.google.com/store/apps/details?id=com.siham.superenvoie";
+        window.location.replace("https://play.google.com/store/apps/details?id=com.siham.superenvoie");
       }
     });
   </script>
@@ -25,26 +26,40 @@
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       text-align: center;
       padding: 40px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    p {
+      color: #666;
     }
     a {
       display: block;
-      margin: 20px;
+      margin: 20px auto;
+      padding: 15px;
+      max-width: 250px;
       font-size: 18px;
-      color: #007aff;
+      color: white;
+      background-color: #007aff;
+      border-radius: 10px;
       text-decoration: none;
+    }
+    a.android {
+      background-color: #34a853;
     }
   </style>
 </head>
 
 <body>
-  <h1>Installer Super Envoie</h1>
+  <h1>🚀 Installer Super Envoie</h1>
   <p>Choisissez votre plateforme :</p>
 
-  <a href="https://apps.apple.com/fr/app/super-envoie/id6754334904">
+  <a href="https://apps.apple.com/fr/app/super-envoie/id6759556505">
     📱 Télécharger sur l’App Store
   </a>
 
-  <a href="https://play.google.com/store/apps/details?id=com.siham.superenvoie">
+  <a class="android" href="https://play.google.com/store/apps/details?id=com.siham.superenvoie">
     🤖 Télécharger sur Google Play
   </a>
 </body>
